@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{mathpazo}
+\usepackage{amsmath}
+\usepackage[margin=1in]{geometry}
+\begin{document}
+
+\title{Mortgage Approval Analysis Project}
+\author{}
+\date{}
+\maketitle
+
+This project will follow a paper published in the \textit{American Economic Review}. The purpose of the paper was to test for the presence of racial discrimination in the mortgage approval process. The dataset provided contains records of the 2,380 applicants for mortgages in Boston.
+
+\section*{Instructions}
+\begin{enumerate}
+    \item Create a folder called \texttt{Project}.
+    \item Read the paper as it provides a detailed discussion of the data and insight on the determinants of the probability of being approved.
+    \item Bring in the dataset provided within my repository. The variables in the dataset do not have intuitive names (e.g., the meaning of S3 is unclear). Referencing the data description and the AER paper, identify the qualitative dependent variable that you will be modeling and the set of co-variates: debt-to-income ratio, race, self-employed, marital status, and education indicator variables.
+
+    \item Generate summary statistics on the set of variables selected, and explain the composition of the sample and of the characteristics of an average (representative) applicant. In the process, you should also generate scatterplots, histograms, and frequency counts on particular variables of interest, which can be referenced in your explanation of the composition of the sample and of a representative applicant.
+    \item What is the baseline probability of an individual being approved for a mortgage?
+    \item Based on the data you read in, create a table with the following structure (values will not be the same as the example):
+\end{enumerate}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{lccc}
+        \toprule
+        \textbf{Applicant Race} & \textbf{Approved} & \textbf{Not Approved} & \textbf{Total} \\
+        \midrule
+        Black & 23 & 32 & 55 \\
+        White & 75 & 25 & 100 \\
+        \midrule
+        \textbf{Total} & 98 & 57 & 155 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Example Mortgage Approval Table}
+\end{table}
+
+\begin{enumerate}
+    \setcounter{enumi}{6}
+    \item From the table you create in step 6, calculate the following:
+    \begin{itemize}
+        \item $P(\text{Approved}|\text{White})$
+        \item $P(\text{Approved}|\text{Black})$
+    \end{itemize}
+\end{enumerate}
+
+\end{document}

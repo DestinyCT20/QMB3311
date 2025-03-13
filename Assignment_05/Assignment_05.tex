@@ -51,7 +51,7 @@ x_{i}, & \text{if } k = 1,\\
 
 where $x_{i}$ is a number. It will be a single observation of a list of covariates \texttt{x} when \texttt{logit\_d\_i()} is used in another function. Add this function your module \texttt{my\_logit\_A5.py}.
 
-\part Write another helper function \texttt{logit\_dLi\_dbk(y\_i,x\_i, beta\_0, beta\_1)} that helps you calculate an individual term in the sum of the gradient vector. The formula for \texttt{logit\_dLi\_dbk()} is
+\part Write another helper function \texttt{logit\_dLi\_dbk(y\_i,x\_i, k, beta\_0, beta\_1)} that helps you calculate an individual term in the sum of the gradient vector. The formula for \texttt{logit\_dLi\_dbk()} is
 is
 
 \begin{equation*}

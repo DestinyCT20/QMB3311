@@ -95,8 +95,7 @@
 # it takes the  floor 
 
 17 // 10
-  
-
+5//4  
 # If the number is negative, the floor is still one number lower:
 
 -17 // 10
